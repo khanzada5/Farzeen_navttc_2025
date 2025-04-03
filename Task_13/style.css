@@ -1,0 +1,66 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    position: relative;
+}
+
+/* Main Dropdown Menu */
+.dropdown-menu > li {
+    display: inline-block;
+}
+
+.dropdown-menu > li > a {
+    color: white;
+    padding: 16px 20px;
+    display: block;
+    text-decoration: none;
+    background-color: #333;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #575757;
+}
+
+/* Submenu (Nested Dropdowns) */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 200px;
+    border-radius: 5px;
+}
+
+.submenu li a {
+    padding: 12px 16px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    background-color: #444;
+}
+
+.submenu li a:hover {
+    background-color: #575757;
+}
+
+/* Show submenu on hover */
+.dropdown:hover .submenu {
+    display: block;
+}
