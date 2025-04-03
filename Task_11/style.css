@@ -1,0 +1,48 @@
+/* General Styles for Links */
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px; 
+    display: block; 
+    font-size: large;
+}
+
+/* Top Navigation Bar */
+#top-nav {
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: right;
+    padding: 10px 0;
+    position: fixed ;
+    width: 100%;
+    top: 0;
+    left: 0;  
+    z-index: 100;
+}
+
+#top-nav a { margin: 0 15px;}
+
+
+/* Left Sidebar Navigation Bar */
+#left-nav {
+    background-color: black;
+    position: fixed;
+    top: 50px; /* To avoid overlap with top-nav */
+    left: 0;
+    width: 200px;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    padding-top: 20px;  
+}
+
+#left-nav a {
+    margin: 10px 0;}
+
+
+/* Content Section */
+#content {
+    margin-left: 220px; /* To leave space for the sidebar */
+    margin-top: 60px; /* To avoid overlap with the top-nav */
+    padding: 20px;
+}
