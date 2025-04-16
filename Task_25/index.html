@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            display: none;
+            margin-top: 10px;
+             padding: 10px;
+             background-color: #ec250b;
+            border: 1px solid #000000;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggle">Show Content</button>
+
+    <div id="content">
+        Here's the hidden content that slides down!
+    </div>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+     $(document).ready(function() {
+      $('#toggle').click(function() {
+        $('#content').slideToggle();
+      });
+    });
+</script>
+</body>
+</html>

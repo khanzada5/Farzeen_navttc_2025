@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loop Count from 5 to 15</title>
+</head>
+<body>
+
+  <h2>Using For Loop</h2>
+  <div id="forLoop"></div>
+
+  <h2>Using While Loop</h2>
+  <div id="whileLoop"></div>
+
+  <h2>Using Do While Loop</h2>
+  <div id="doWhileLoop"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    // For Loop
+    let forOutput = "";
+    for (let i = 5; i <= 15; i++) {
+      forOutput += i + "<br>";
+    }
+    document.getElementById("forLoop").innerHTML = forOutput;
+
+    // While Loop
+    let whileOutput = "";
+    let j = 5;
+    while (j <= 15) {
+      whileOutput += j + "<br>";
+      j++;
+    }
+    document.getElementById("whileLoop").innerHTML = whileOutput;
+
+    // Do While Loop
+    let doWhileOutput = "";
+    let k = 5;
+    do {
+      doWhileOutput += k + "<br>";
+      k++;
+    } while (k <= 15);
+    document.getElementById("doWhileLoop").innerHTML = doWhileOutput;
+  </script>
+
+</body>
+</html>
